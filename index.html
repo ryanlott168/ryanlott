@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Welcome!</title>
+    <meta name="author" content="Ryan Lott">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- JS Files
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Alata|Playfair+Display&display=swap" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+  </head>
+  <body>
+    <!-- Nav Bar
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          
+        </div>
+      </div>
+    </div>
+    <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section hero">
+      <div class="container">
+        <div class="row">
+          <div class="two-thirds column">
+              <h6 class="titles">Front-End Developer / Digital Strategist</h6>
+              <h1 class='name'>Ryan<br>Lott<br></h1>
+              <button id="contactButton" class="button-primary">Contact Me</button>
+          </div>
+          <div class="one-third column">
+            <img id="self-image" src="images/me.jpg" alt="picture of Ryan Lott">
+          </div>
+        </div>
+        <div id="hiddenForm" class="row hidden">
+          <br>
+          <form action="https://mailthis.to/4jwxalzjc" method="POST" encType="multipart/form-data">
+            <div class="row">
+              <div class="six columns">
+                <label for="exampleEmailInput">Your email</label>
+                <input class="u-full-width" type="email" name="email" id="emailInput">
+              </div>
+              <div class="six columns">
+                <label for="exampleRecipientInput">Reason for contacting</label>
+                <select class="u-full-width" name="reason" id="recipientInput">
+                  <option value="Question">Question</option>
+                  <option value="Job Opportinity">Job Opportinity</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+            <label for="exampleMessage">Message</label>
+            <textarea class="u-full-width" name="message" id="message"></textarea>
+            <input type="hidden" name="_confirmation" value="Thanks! I'll get back to you shortly!">
+            <input class="button-primary" type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Experience & About Me Section
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section about-me">
+      <div class="container">
+        <div class="row">
+          <div class="two-thirds column">
+            <div>
+              <h2>Objective</h2>
+              <p>Use this area to describe your goals.
+
+              </p>
+            </div>
+          </div>
+          <div class="one-third column">
+            <div class="">
+              <canvas id="languages" width="300" height="300"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Eduction & Contact Section
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section education">
+
+    </div>
+
+    <!-- Footer
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section footer">
+
+    </div>
+
+  <!-- End Document
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

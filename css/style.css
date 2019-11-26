@@ -1,0 +1,38 @@
+
+
+.flex {
+  display: flex;
+}
+
+.hero {
+  margin: 10em 0;
+}
+
+.titles {
+  margin-bottom: .75em;
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: .05em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+.name {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-size: 100px;
+  letter-spacing: -3px;
+  line-height: .9em;
+  text-transform: uppercase;
+  margin-bottom: .4em;
+}
+
+#self-image {
+  height:75%;
+  width:75%;
+  border-radius: 150px;
+}
+
+.hidden{
+  display: none;
+}
