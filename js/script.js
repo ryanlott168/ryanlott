@@ -1,7 +1,11 @@
 $(document).ready(function() {
   $('#contactButton').on('click', function(){
-     $('#hiddenForm').toggleClass('hidden',1000, "easeOutSine" );
+     $('#hiddenForm').show(600);
    })
+
+   $('#closeButton').on('click', function(){
+      $('#hiddenForm').hide(600);
+    })
  });
 
 var ctx = document.getElementById('languages').getContext('2d');

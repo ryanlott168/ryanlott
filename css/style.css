@@ -36,3 +36,11 @@
 .hidden{
   display: none;
 }
+
+#closeButton {
+  display: inline-block;
+  margin-left: 1em;
+}
+#closeButton:hover {
+  cursor: pointer;
+}
