@@ -139,6 +139,9 @@
   .titles {
     display: none;
   }
+  .name {
+    font-size: 75px;
+  }
   body {
     text-align: center;
   }
