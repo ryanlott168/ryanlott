@@ -31,17 +31,11 @@
     <!-- Favicon
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="icon" type="image/png" href="images/favicon.png">
+
+
+
   </head>
   <body>
-    <!-- Nav Bar
-    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="section">
-      <div class="container">
-        <div class="row">
-
-        </div>
-      </div>
-    </div>
     <!-- Primary Page Layout
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="section hero">
@@ -50,15 +44,16 @@
           <div class="two-thirds column">
               <h6 class="titles">Front-End Developer / Digital Strategist</h6>
               <h1 class='name'>Ryan<br>Lott<br></h1>
-              <button id="contactButton" class="button-primary">Contact Me</button>
+              <h6 class="titles-small">Front-End Developer &<br>Digital Strategist<br>Dallas, TX</h6>
           </div>
           <div class="one-third column">
             <img id="self-image" src="images/me.jpg" alt="picture of Ryan Lott">
           </div>
         </div>
+        <button id="contactButton" class="button-primary">Contact Me</button>
         <div id="hiddenForm" class="row hidden">
           <br>
-          <form action="https://mailthis.to/4jwxalzjc" method="POST" encType="multipart/form-data">
+          <form action="https://mailthis.to/4jwxalzjc" method="POST" data-netlify="true">
             <div class="row">
               <div class="six columns">
                 <label for="exampleEmailInput">Your email</label>
@@ -83,9 +78,21 @@
       </div>
     </div>
 
-    <!-- Experience & About Me Section
+
+    <!-- NavBar
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <div class="section about-me">
+
+    <div class="navBar">
+      <nav class="tabs">
+        <div class="selector"></div>
+        <a href="#" class="active projectsTab"><i></i>Projects</a>
+        <a href="#" class="backgroundTab"><i></i>Background</a>
+      </nav>
+    </div>
+
+    <!-- Background Sub-section
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="section tabContent background">
       <div class="container">
         <div class="row">
           <div class="two-thirds column">
@@ -118,7 +125,7 @@
     <!-- Footer
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="section footer">
-
+      
     </div>
 
   <!-- End Document

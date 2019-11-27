@@ -1,13 +1,5 @@
-
-
-.flex {
-  display: flex;
-}
-
-.hero {
-  margin: 10em 0;
-}
-
+/* Header Section
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .titles {
   margin-bottom: .75em;
   font-style: normal;
@@ -33,6 +25,29 @@
   border-radius: 150px;
 }
 
+/* NightMode
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.nightModeButton {
+  height:1.5em;
+  right:10px;
+  top: 10px;
+  display:block;
+  position: relative;
+  float: right;
+  color: white;
+}
+
+.darkMode {
+  color: white;
+  background-color: #000;
+}
+
+.lightModeImage {
+  background-image: url('../images/lightMode.png');
+}
+
+/* HiddenForm
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 .hidden{
   display: none;
 }
@@ -43,4 +58,117 @@
 }
 #closeButton:hover {
   cursor: pointer;
+}
+
+/* NavBar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.tabs{
+  font-size:15px;
+  padding:0px;
+  list-style:none;
+  background:#777;
+  box-shadow:0px 5px 20px rgba(0,0,0,0.1);
+  display:inline-block;
+  border-radius:50px;
+  position:relative;
+}
+
+.tabs a{
+  text-decoration:none;
+  color: #fff;
+  text-transform:uppercase;
+  padding:10px 20px;
+  display:inline-block;
+  position:relative;
+  z-index:1;
+  transition-duration:0.6s;
+}
+
+.tabs a.active{
+  color:#000;
+}
+
+.tabs a i{
+  margin-right:5px;
+}
+
+.tabs .selector{
+  height:100%;
+  display:inline-block;
+  position:absolute;
+  left:0px;
+  top:0px;
+  z-index:1;
+  border-radius:50px;
+  transition-duration:0.6s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  background: #ffea00;
+}
+
+
+.navBar {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5em 0;
+  text-align: center;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+}
+
+.tabContent {
+  display: none;
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (max-width: 550px) {
+
+}
+
+/* Larger than tablet */
+@media (max-width: 750px) {
+  .titles {
+    display: none;
+  }
+  body {
+    text-align: center;
+  }
+  .section {
+    margin-top: 2em;
+  }
+
+  #contactButton {
+    margin: 1.5em;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+  .hero {
+    padding-top: 10em;
+    padding-bottom: 5em;
+    text-align: left;
+  }
+
+  .titles-small {
+    display: none;
+  }
+  .titles {
+    display: inline;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+
 }
