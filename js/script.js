@@ -1,4 +1,7 @@
 $(document).ready(function() {
+
+  // Hidden Form Function
+  // ––––––––––––––––––––––––––––––––––––––––––––––––––
   $('#contactButton').on('click', function(){
      $('#hiddenForm').show(600);
    })
@@ -7,43 +10,49 @@ $(document).ready(function() {
       $('#hiddenForm').hide(600);
     })
 
+// DarkMode Function
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
 
-    $('.projectsTab').on('click', function(){
-       $('.background').hide(600);
-       $('.projects').show(600);
-     })
-     $('.backgroundTab').on('click', function(){
-        $('.projects').hide(600);
-        $('.background').show(600);
-      })
+  $('.nightModeButton').on('click', function(){
+    $(this).toggleClass('lightModeImage');
+     $('body').toggleClass('darkMode');
+   })
 
-      $('.nightModeButton').on('click', function(){
-        $(this).toggleClass('lightModeImage');
-         $('body').toggleClass('darkMode');
-       })
-       
-     var tabs = $('.tabs');
-     var selector = $('.tabs').find('a').length;
-     //var selector = $(".tabs").find(".selector");
-     var activeItem = tabs.find('.active');
-     var activeWidth = activeItem.innerWidth();
+ // NavBar Function
+ // ––––––––––––––––––––––––––––––––––––––––––––––––––
+   var tabs = $('.tabs');
+   var selector = $('.tabs').find('a').length;
+   var activeItem = tabs.find('.active');
+   var activeWidth = activeItem.innerWidth();
+   $(".selector").css({
+     "left": activeItem.position.left + "px",
+     "width": activeWidth + "px"
+   });
+
+   $(".tabs").on("click","a",function(e){
+     e.preventDefault();
+     $('.tabs a').removeClass("active");
+     $(this).addClass('active');
+     var activeWidth = $(this).innerWidth();
+     var itemPos = $(this).position();
      $(".selector").css({
-       "left": activeItem.position.left + "px",
+       "left":itemPos.left + "px",
        "width": activeWidth + "px"
      });
+   });
 
-     $(".tabs").on("click","a",function(e){
-       e.preventDefault();
-       $('.tabs a').removeClass("active");
-       $(this).addClass('active');
-       var activeWidth = $(this).innerWidth();
-       var itemPos = $(this).position();
-       $(".selector").css({
-         "left":itemPos.left + "px",
-         "width": activeWidth + "px"
-       });
-     });
+   $('.projectsTab').on('click', function(){
+      $('.background').hide(600);
+      $('.projects').show(600);
+    })
+    $('.backgroundTab').on('click', function(){
+       $('.projects').hide(600);
+       $('.background').show(600);
+     })
  });
+
+ // Language Bar Graph
+ // ––––––––––––––––––––––––––––––––––––––––––––––––––
 
 var ctx = document.getElementById('languages').getContext('2d');
 var myBarChart = new Chart(ctx, {
@@ -79,26 +88,4 @@ var myBarChart = new Chart(ctx, {
           }]
       }
     }
-});
-
-var tabs = $('.tabs');
-var selector = $('.tabs').find('a').length;
-//var selector = $(".tabs").find(".selector");
-var activeItem = tabs.find('.active');
-var activeWidth = activeItem.innerWidth();
-$(".selector").css({
-  "left": activeItem.position.left + "px",
-  "width": activeWidth + "px"
-});
-
-$(".tabs").on("click","a",function(e){
-  e.preventDefault();
-  $('.tabs a').removeClass("active");
-  $(this).addClass('active');
-  var activeWidth = $(this).innerWidth();
-  var itemPos = $(this).position();
-  $(".selector").css({
-    "left":itemPos.left + "px",
-    "width": activeWidth + "px"
-  });
 });
