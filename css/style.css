@@ -1,5 +1,6 @@
 /* Header Section
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .titles {
   margin-bottom: .75em;
   font-style: normal;
@@ -25,27 +26,15 @@
   border-radius: 150px;
 }
 
-/* NightMode
+/* darkMode
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.nightModeButton {
-  height:1.5em;
-  right:10px;
-  top: 10px;
-  display:block;
-  position: relative;
-  float: right;
+.darkmode--activated {
   color: white;
 }
 
-.darkMode {
-  color: white;
-  background-color: #000;
+.darkmode-toggle {
+  z-index: 1;
 }
-
-.lightModeImage {
-  background-image: url('../images/lightMode.png');
-}
-
 /* HiddenForm
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .hidden{
@@ -116,9 +105,6 @@
   justify-content: center;
 }
 
-.tabContent {
-  display: none;
-}
 
 /* Media Queries
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
